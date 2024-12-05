@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <style>
+        #main {
+            text-align: center;
+        }
+
+        body {
+
+            background-color: rgb(167, 121, 232);
+
+        }
+        
+        #head{
+            margin-left:650px;
+        }
+        .subj {
+
+            width: 15px;
+            height: 20px;
+
+        }
+
+
+
+
+
+        #f {
+            text-align: center;
+            border: none;
+            width: 500px;
+            height: 1500px;
+            text-align: left;
+            margin: auto;
+            padding-left: 20px;
+            padding-top: 20px;
+            font-weight: bold;
+            background-color: rgb(212, 195, 198);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            border-radius: 12px;
+
+        }
+
+        input,
+        #A {
+
+
+            width: 90%;
+            height: 40px;
+            border-radius: 3px;
+            padding-left: 20px;
+        }
+
+        .b {
+            cursor: pointer;
+            width: 150px;
+            height: 35px;
+            background-color: aqua;
+            border-radius: 5px;
+            font-weight: bold;
+
+        }
+
+        .f {
+
+            cursor: pointer;
+            width: 150px;
+            height: 35px;
+            background-color: aqua;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-left: 140px;
+        }
+
+        #M,
+        #F {
+
+            width: 20px;
+            height: 20px;
+
+        }
+         
+        .E {
+            background-color: black;
+            color: white;
+            height: 23px;
+            border-radius: 3px;
+            width: 80px;
+        }
+
+        @media(max-width:500px) {
+            #head {
+                margin-left: 160px;
+                font-size: 20px;
+                width:100%;
+            }
+            #f{
+                width:400px;
+                padding: 20px;
+                margin-left:10px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <h2 id="head">STUDENT LOGIN</h2>
+    <form action="" id="f">
+        <div id="main">
+            <h3>Personal Information :</h3>
+            <label for="name">Name :</label><br>
+            <input type="text" name="name" id="name" placeholder="Your name"><br><br><br>
+            <label for="name">Father name :</label><br>
+            <input type="text" name="name" id="name" placeholder="Father name"><br><br><br>
+            <label for="name">Mother name :</label><br>
+            <input type="text" name="name" id="name" placeholder="Mother name"><br><br><br>
+            <label for="mail">Email :</label><br>
+            <input type="email" name="mail" id="mail" placeholder="Email"><br><br><br>
+            <label for="role">Role :</label><br>
+            <input type="text" name="role" id="role" placeholder="Role"><br><br><br>
+            <label for="phone">Enter your phone number:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+                placeholder="cell number"><br><br><br>
+            <label for="dob">Date of birth :</label><br>
+            <input type="date" name="dob" id="dob"><br><br><br>
+            <label for="gender">Gender :</label><br>
+            Male <input type="radio" name="gender" value="male" id="M">
+            Female <input type="radio" name="gender" value="female" id="F">
+
+            <br><br>
+            <label for="textbox">Address :</label><br>
+            <textarea name="textbox" id="A"></textarea><br>
+            <h3>Educational Information :</h3>
+            <label for="study">Education :</label>
+            <select name="study" id="study" class="E">
+                <option value="study" class="B">BE</option>
+                <option value="study" class="C">MBA</option>
+                <option value="study" class="D">CA</option>
+                <option value="study" class="V">PUC</option>
+            </select><br><br><br>
+            <label for="college">PUC :</label>
+            <input type="text" id="college" placeholder="Pre-university course"><br><br><br>
+            <label for="subjects">Subjects :</label><br><br>
+            Physics :<input type="checkbox" name="checkbox" id="subjects" class="subj"><br><br>
+            chemistry :<input type="checkbox" name="checkbox" id="subjects" class="subj"><br><br>
+            Maths :<input type="checkbox" name="checkbox" id="subjects" class="subj"><br><br>
+            Biology :<input type="checkbox" name="checkbox" id="subjects" class="subj"><br><br>
+            Kannada :<input type="checkbox" name="checkbox" id="subjects" class="subj"><br><br>
+            English :<input type="checkbox" name="checkbox" id="subjects" class="subj"><br><br>
+
+
+
+            <button class="b">Submit</button><br><br>
+            <button class="b">Reset</button>
+        </div>
+    </form>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
